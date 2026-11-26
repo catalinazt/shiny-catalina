@@ -8,13 +8,13 @@
 name: Publicar app en GitHub Pages
 # Eventos que activan el workflow
 on:
-# Permite ejecutarlo manualmente desde GitHub Actions
-workflow_dispatch:
-# También se ejecuta automáticamente al hacer push
-push:
-# Solo cuando los cambios llegan a la rama main
-branches: ["main"]
-# Lo que efectivamente hará
+  # Permite ejecutarlo manualmente desde GitHub Actions
+  workflow_dispatch:
+  # También se ejecuta automáticamente al hacer push
+  push:
+  # Solo cuando los cambios llegan a la rama main
+  branches: ["main"]
+  # Lo que efectivamente hará
 jobs:
   # Nombre del trabajo (puede ser cualquier identificador)
   shinylive:
@@ -25,9 +25,9 @@ jobs:
     app-dir: app
     # Versión de shinylive a utilizar
     shinylive-version: shinylive
-# Permisos necesarios para publicar en GitHub Pages
-permissions:
-  # Permite escribir en GitHub Pages
-  pages: write
-  # Permite autenticarse mediante tokens OIDC
-  id-token: write
+ # Permisos necesarios para publicar en GitHub Pages
+ permissions:
+   # Permite escribir en GitHub Pages
+   pages: write
+   # Permite autenticarse mediante tokens OIDC
+   id-token: write
