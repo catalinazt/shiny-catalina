@@ -1,0 +1,4 @@
+Type: Project
+Title: App Shiny del curso Reproducibilidad (UDP 2026)
+Authors@R: person("SU-USUARIO", role = c("aut", "cre"))
+Imports: shiny, rsconnect
